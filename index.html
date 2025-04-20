@@ -782,7 +782,7 @@
       <div class="question-answer" id="questionAnswer">
         <p id="displayAnswer"></p>
       </div>
-      <button class="next-btn" onclick="showFormPage()">Continue to Final Surprise</button>
+      <button class="next-btn" onclick="showQuizPage()">Take Our Compatibility Quiz</button>
     </div>
   </div>
 
@@ -854,7 +854,7 @@
       <h1 class="form-title">Final Surprise from Panda 🐼</h1>
       <p class="form-message">
         Here's a little form for you to share your thoughts about this surprise.<br>
-        Please fill it out honestly - your answers will help me understand you better!
+        Please fill it out honestly - your answer will help me understand u better!
       </p>
       
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdzKbj3w4v64_WKlsMrP9GqhwSZrbbg7VnF8tTBDv15oXZeNA/viewform?embedded=true" 
@@ -877,10 +877,10 @@
   <script>
     // Password Protection
     function checkPassword() {
-      const passwords = ["minha", "birthday", "forever", "love", "19"];
+      const password = "minha22";
       const input = document.getElementById('passwordInput').value.toLowerCase();
       
-      if (passwords.includes(input)) {
+      if (input === password) {
         document.getElementById('passwordScreen').style.display = 'none';
         document.getElementById('birthdayPage').style.display = 'flex';
       } else {
@@ -952,7 +952,6 @@
     
     // Show form page when user clicks the button
     function showFormPage() {
-      document.getElementById('questionPage').style.display = 'none';
       document.getElementById('quizPage').style.display = 'none';
       document.getElementById('formPage').style.display = 'flex';
       
